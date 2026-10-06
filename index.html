@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sofía · Mis XV años</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7EFE6;--card:#FFFCF8;--ink:#3A302A;--mute:#8A7B6E;--gold:#B98B45;--gold2:#E3C98F;--rose:#E9CFC4;--line:#E6D6B8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B1512;--card:#241C18;--ink:#F3E8DA;--mute:#B9A998;--gold:#D6AB62;--gold2:#8A6A33;--rose:#3A2B27;--line:#3F3128}}
+:root[data-theme="dark"]{--bg:#1B1512;--card:#241C18;--ink:#F3E8DA;--mute:#B9A998;--gold:#D6AB62;--gold2:#8A6A33;--rose:#3A2B27;--line:#3F3128}
+*{box-sizing:border-box;margin:0}html{height:100%}
+body{min-height:100%;background:radial-gradient(circle at 50% 0,var(--rose),var(--bg) 60%);color:var(--ink);font:300 15px/1.7 Montserrat,system-ui,sans-serif;display:flex;justify-content:center;padding:26px 14px 50px}
+.inv{width:100%;max-width:460px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:12px;box-shadow:0 24px 60px rgba(120,80,30,.18)}
+.in{border:1px solid var(--gold2);border-radius:18px;padding:40px 24px 34px;text-align:center;position:relative}
+.in>*{animation:up .9s both}.in>*:nth-child(2){animation-delay:.15s}.in>*:nth-child(3){animation-delay:.3s}.in>*:nth-child(4){animation-delay:.45s}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+.k{letter-spacing:.38em;font-size:11px;color:var(--gold);font-weight:600}
+.hi{margin-top:18px;color:var(--mute)}
+h1{font:700 64px/1.1 'Playfair Display',Georgia,serif;color:var(--gold);margin:4px 0 2px}
+.xv{font:italic 500 20px 'Playfair Display',serif;letter-spacing:.06em}
+.orn{color:var(--gold);margin:14px 0;letter-spacing:.5em}
+.date{display:flex;align-items:center;justify-content:center;gap:14px;font-weight:600;letter-spacing:.2em;font-size:12px}
+.date:before,.date:after{content:"";height:1px;width:46px;background:var(--gold2)}
+.mu{margin:18px auto 0;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold2);background:transparent;color:var(--gold);border-radius:30px;padding:7px 16px;font:600 12px Montserrat;cursor:pointer}
+.eq{display:inline-flex;gap:2px;align-items:flex-end;height:14px}.eq i{width:3px;height:5px;background:var(--gold);border-radius:2px}
+.pl .eq i{animation:eq .9s ease-in-out infinite}.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{50%{height:14px}}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:28px 0 6px}
+.cd div{border:1px solid var(--line);border-radius:12px;padding:10px 2px;background:var(--bg)}
+.cd b{display:block;font:700 24px 'Playfair Display',serif;color:var(--gold)}.cd small{font-size:10px;letter-spacing:.12em;color:var(--mute);text-transform:uppercase}
+.sec{margin-top:34px}.sec h2{font:600 11px Montserrat;letter-spacing:.34em;color:var(--gold);margin-bottom:10px}
+.sec .big{font:700 22px 'Playfair Display',serif}.sec p{color:var(--mute)}
+.msg{font:italic 500 16px/1.7 'Playfair Display',Georgia,serif;margin-top:30px}
+.btn{display:inline-block;margin-top:14px;padding:11px 26px;border-radius:30px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font:600 12px Montserrat;letter-spacing:.12em;background:transparent;cursor:pointer;transition:all .3s}
+.btn:hover,.btn.f{background:var(--gold);color:#fff}
+.btn.f{padding:14px 30px;box-shadow:0 8px 22px rgba(185,139,69,.35)}
+.end{margin-top:34px;font:italic 500 15px/1.7 'Playfair Display',serif;color:var(--ink)}
+.ft{margin-top:22px;font-size:10px;letter-spacing:.2em;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head><body>
+<main class="inv"><div class="in">
+<div class="k">¡HOLA! TE INVITO A MIS</div>
+<div><h1>Sofía</h1><div class="xv">XV años</div><div class="orn">✦ ✦ ✦</div><div class="date">21 · NOVIEMBRE · 2026</div>
+<button class="mu" id="mu" aria-label="Música"><span class="eq"><i></i><i></i><i></i></span><span id="mt">Activar música</span></button></div>
+<div class="cd" id="cd"></div>
+<p class="msg">“Hoy comienza una nueva etapa en mi vida y quiero compartirla contigo.”</p>
+<div class="sec"><h2>¿CUÁNDO?</h2><p class="big" style="color:var(--ink)">Sábado 21 de noviembre</p><p>Recepción desde las 6:00 PM</p><p style="font-size:12px">Agradecemos tu puntualidad.</p></div>
+<div class="sec"><h2>¿DÓNDE?</h2><p class="big" style="color:var(--ink)">Hacienda Los Almendros</p><p>Km 3 vía Las Palmas, Envigado</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Envigado+Antioquia" target="_blank" rel="noopener">📍 CÓMO LLEGAR</a></div>
+<div class="sec"><h2>DRESS CODE</h2><p class="big" style="color:var(--ink)">Formal elegante</p><p>Preferiblemente tonos pastel o neutros</p></div>
+<div class="sec"><h2>CONFIRMA TU ASISTENCIA</h2><p>Antes del 8 de noviembre</p><button class="btn f" id="ok">Confirmar por WhatsApp</button></div>
+<p class="end">Con todo mi cariño, tu presencia hará<br>aún más especial este momento.<br>¡Te espero con ilusión!</p>
+<div class="ft">LIDAY MINI · MUESTRA CON DATOS FICTICIOS</div>
+</div></main>
+<script>
+var T=new Date(2026,10,21,18,0).getTime(),cd=document.getElementById('cd');
+function tk(){var d=Math.max(0,T-Date.now()),v=[[Math.floor(d/864e5),'días'],[Math.floor(d/36e5)%24,'horas'],[Math.floor(d/6e4)%60,'min'],[Math.floor(d/1e3)%60,'seg']];cd.innerHTML=v.map(function(a){return '<div><b>'+a[0]+'</b><small>'+a[1]+'</small></div>'}).join('')}
+tk();setInterval(tk,1000);
+var mu=document.getElementById('mu'),mt=document.getElementById('mt');
+mu.onclick=function(){mu.classList.toggle('pl');mt.textContent=mu.classList.contains('pl')?'Música activada':'Activar música'};
+var ok=document.getElementById('ok');ok.onclick=function(){ok.textContent='¡Gracias, te espero! 💛'};
+</script></body></html>
